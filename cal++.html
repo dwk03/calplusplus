@@ -105,9 +105,7 @@
 
         function calculate() {
             try {
-                // Tớ đã thay `Function(...)()` bằng `eval()` đơn giản hơn, 
-                // vì trong bối cảnh này, dùng `eval()` là cách phổ biến nhất 
-                // để tính toán biểu thức chuỗi đơn giản.
+                
                 display.value = eval(display.value.replace(/x/g, '*')); // Sửa 'x' thành '*'
             } catch (error) {
                 display.value = 'Error.';
@@ -115,4 +113,5 @@
         }
     </script>
 </body>
+
 </html>
